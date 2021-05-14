@@ -25,8 +25,6 @@ const uniqueHexColors = [
   ...new Set(allHexColors.map((hex) => hex.toLowerCase())),
 ]
 
-console.log(uniqueHexColors.length)
-
 const getColorDot = (hex) => `
   <span
     class="color-dot"
