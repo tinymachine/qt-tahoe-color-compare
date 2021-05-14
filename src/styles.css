@@ -29,11 +29,6 @@ table {
 }
 
 thead {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-  background-color: rgba(255, 255, 255, 0.9);
-  -webkit-backdrop-filter: blur(2px);
 }
 
 th,
@@ -43,6 +38,11 @@ td {
 }
 
 th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: rgba(255, 255, 255, 0.9);
+  -webkit-backdrop-filter: blur(2px);
   padding: 1rem;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
@@ -52,7 +52,6 @@ th {
 th:hover,
 th.active {
   color: black;
-  position: relative;
 }
 
 th.active::after {
