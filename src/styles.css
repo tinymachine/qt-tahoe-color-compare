@@ -80,7 +80,7 @@ td.color {
   line-height: 1.25;
 }
 
-.color-dot {
+.color-swatch {
   --radius: 2rem;
   display: block;
   position: relative;

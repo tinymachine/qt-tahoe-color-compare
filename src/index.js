@@ -26,9 +26,9 @@ document.getElementById('app').innerHTML = `
 
 // generate markup
 
-const getColorDot = (hex) => `
+const getColorSwatch = (hex) => `
   <span
-    class="color-dot"
+    class="color-swatch"
     style="background-color: ${hex};"
   >
   </span>
@@ -40,7 +40,7 @@ const styleHash = (hex) => `
 
 const getHexMarkup = (hex) => `
   <span class="hex-with-dot">
-    ${getColorDot(hex)}
+    ${getColorSwatch(hex)}
     <span class="pad-bottom">${styleHash(hex)}</span>
   </span>
 `
