@@ -1,6 +1,14 @@
+:root {
+  --font-family-monospace: ui-monospace, Menlo, Monaco,
+    'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
+    'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+}
+
 body {
   font-family: sans-serif;
   text-align: center;
+  width: 100%;
 }
 
 main {
@@ -11,6 +19,7 @@ main {
 h1 {
   display: inline-block;
   padding: 1rem;
+  margin-bottom: 0;
 }
 
 table {
@@ -33,6 +42,22 @@ td {
 
 th {
   padding: 1rem;
+  cursor: pointer;
+  color: rgba(0, 0, 0, 0.4);
+  transition: color 0.2s;
+}
+
+th:hover,
+th.active {
+  color: black;
+  position: relative;
+}
+
+th.active::after {
+  position: absolute;
+  margin-left: 0.25rem;
+  content: '↓';
+  font-family: var(--font-family-monospace);
 }
 
 td {
@@ -61,9 +86,7 @@ td {
 }
 
 .mono {
-  font-family: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
-    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  font-family: var(--font-family-monospace);
 }
 
 .lower {
