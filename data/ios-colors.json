@@ -1,0 +1,347 @@
+{
+  "primary": {
+    "dark": "#ffffffff",
+    "light": "#0098DBff",
+    "any": "#0098DBff"
+  },
+  "secondary": {
+    "dark": "#ffffffff",
+    "light": "#636363ff",
+    "any": "#636363ff"
+  },
+  "offersTitle": {
+    "dark": "#ffffffff",
+    "light": "#0098FFff",
+    "any": "#0098FFff"
+  },
+  "mylistTitle": {
+    "dark": "#ffffffff",
+    "light": "#F3A33Aff",
+    "any": "#F3A33Aff"
+  },
+  "redeemTitle": {
+    "dark": "#ffffffff",
+    "light": "#E5336Eff",
+    "any": "#E5336Eff"
+  },
+  "offersSubtitle": {
+    "dark": "#ffffffff",
+    "light": "#0A75BDff",
+    "any": "#0A75BDff"
+  },
+  "mylistSubtitle": {
+    "dark": "#ffffffff",
+    "light": "#F3A33Aff",
+    "any": "#F3A33Aff"
+  },
+  "redeemSubtitle": {
+    "dark": "#ffffffff",
+    "light": "#E5336Eff",
+    "any": "#E5336Eff"
+  },
+  "accountSavingsInfoText": {
+    "dark": "#ffffffff",
+    "light": "#7E7367ff",
+    "any": "#7E7367ff"
+  },
+  "joinButtonBackground": {
+    "dark": "#ffffffff",
+    "light": "#F3F3F3ff",
+    "any": "#F3F3F3ff"
+  },
+  "accountButtonBackground": {
+    "dark": "#ffffffff",
+    "light": "#FFD57Dff",
+    "any": "#FFD57Dff"
+  },
+  "offerAccentColor": {
+    "dark": "#ffffffff",
+    "light": "#0098FFff",
+    "any": "#0098FFff"
+  },
+  "offerHighContrastAccentColor": {
+    "dark": "#ffffffff",
+    "light": "#0077C7ff",
+    "any": "#0077C7ff"
+  },
+  "mylistAccentColor": {
+    "dark": "#ffffffff",
+    "light": "#FFA000ff",
+    "any": "#FFA000ff"
+  },
+  "additionsTangerineTextRegular": {
+    "dark": "#ffffffff",
+    "light": "#9C660Dff",
+    "any": "#9C660Dff"
+  },
+  "redeemAccentColor": {
+    "dark": "#ffffffff",
+    "light": "#F9006Dff",
+    "any": "#F9006Dff"
+  },
+  "redeemHighContrastAccentColor": {
+    "dark": "#ffffffff",
+    "light": "#E00062ff",
+    "any": "#E00062ff"
+  },
+  "searchBarBackgroundColor": {
+    "dark": "#ffffffff",
+    "light": "#FDF6EEff",
+    "any": "#FDF6EEff"
+  },
+  "searchBarText": {
+    "dark": "#ffffffff",
+    "light": "#494746ff",
+    "any": "#494746ff"
+  },
+  "linkRetailerAccent": {
+    "dark": "#ffffffff",
+    "light": "#29A398ff",
+    "any": "#29A398ff"
+  },
+  "linkPayPalButton": {
+    "dark": "#ffffffff",
+    "light": "#4396F7ff",
+    "any": "#4396F7ff"
+  },
+  "textInputPrimary": {
+    "dark": "#ffffffff",
+    "light": "#494746ff",
+    "any": "#494746ff"
+  },
+  "textInputError": {
+    "dark": "#ffffffff",
+    "light": "#DB0000ff",
+    "any": "#DB0000ff"
+  },
+  "textInputNeturalBackground": {
+    "dark": "#ffffffff",
+    "light": "#FDF6EEff",
+    "any": "#FDF6EEff"
+  },
+  "textInputValidBackground": {
+    "dark": "#ffffffff",
+    "light": "#EDF7F6ff",
+    "any": "#EDF7F6ff"
+  },
+  "textInputErrorBackground": {
+    "dark": "#ffffffff",
+    "light": "#FDF6EEff",
+    "any": "#FDF6EEff"
+  },
+  "buttonBackground": {
+    "dark": "#ffffffff",
+    "light": "#0098FFff",
+    "any": "#0098FFff"
+  },
+  "buttonCollectionBarTitle": {
+    "dark": "#ffffffff",
+    "light": "#494746ff",
+    "any": "#494746ff"
+  },
+  "offersButtonCollectionBarButtonTint": {
+    "dark": "#ffffffff",
+    "light": "#FFA000ff",
+    "any": "#FFA000ff"
+  },
+  "neutralAntiqueTint": {
+    "dark": "#ffffffff",
+    "light": "#FDF6EEff",
+    "any": "#FDF6EEff"
+  },
+  "additionsNeutralTextLight": {
+    "dark": "#ffffffff",
+    "light": "#787573ff",
+    "any": "#787573ff"
+  },
+  "secondaryGrayTint": {
+    "dark": "#ffffffff",
+    "light": "#F3F3F3ff",
+    "any": "#F3F3F3ff"
+  },
+  "primaryTangerine": {
+    "dark": "#ffffffff",
+    "light": "#FFA000ff",
+    "any": "#FFA000ff"
+  },
+  "primaryFuchsia": {
+    "dark": "#ffffffff",
+    "light": "#F9006Dff",
+    "any": "#F9006Dff"
+  },
+  "additionsFuchsiaTextRegular": {
+    "dark": "#ffffffff",
+    "light": "#E00062ff",
+    "any": "#E00062ff"
+  },
+  "neutralMarcona": {
+    "dark": "#ffffffff",
+    "light": "#F7E6C633",
+    "any": "#F7E6C633"
+  },
+  "additionsNeutralTextStrong": {
+    "dark": "#ffffffff",
+    "light": "#2F2E2Dff",
+    "any": "#2F2E2Dff"
+  },
+  "retailerGridCardIcon": {
+    "dark": "#ffffffff",
+    "light": "#828282ff",
+    "any": "#828282ff"
+  },
+  "listHeaderTopBar": {
+    "dark": "#ffffffff",
+    "light": "#F7E6C633",
+    "any": "#F7E6C633"
+  },
+  "listHeaderTitle": {
+    "dark": "#ffffffff",
+    "light": "#2F2E2Dff",
+    "any": "#2F2E2Dff"
+  },
+  "listHeaderSubtitle": {
+    "dark": "#ffffffff",
+    "light": "#787573ff",
+    "any": "#787573ff"
+  },
+  "navigationBarTitle": {
+    "dark": "#ffffffff",
+    "light": "#2F2E2Dff",
+    "any": "#2F2E2Dff"
+  },
+  "categoryIconTint": {
+    "dark": "#ffffffff",
+    "light": "#FFA000ff",
+    "any": "#FFA000ff"
+  },
+  "secondaryGray": {
+    "dark": "#ffffffff",
+    "light": "#858585ff",
+    "any": "#858585ff"
+  },
+  "secondaryTealTextLarge": {
+    "dark": "#ffffffff",
+    "light": "#29A398ff",
+    "any": "#29A398ff"
+  },
+  "secondaryTeal": {
+    "dark": "#ffffffff",
+    "light": "#4DB1A8ff",
+    "any": "#4DB1A8ff"
+  },
+  "secondaryYolk": {
+    "dark": "#ffffffff",
+    "light": "#FFD57Dff",
+    "any": "#FFD57Dff"
+  },
+  "additionsNeutralTextRegular": {
+    "dark": "#ffffffff",
+    "light": "#494746ff",
+    "any": "#494746ff"
+  },
+  "additionsNeutralTextRegular25Alpha": {
+    "dark": "#ffffffff",
+    "light": "#49474640",
+    "any": "#49474640"
+  },
+  "additionsNeutralTextTint": {
+    "dark": "#ffffffff",
+    "light": "#CAC4BEff",
+    "any": "#CAC4BEff"
+  },
+  "thirdPartyFacebook": {
+    "dark": "#ffffffff",
+    "light": "#4A68ADff",
+    "any": "#4A68ADff"
+  },
+  "semanticAccountBackground": {
+    "dark": "#ffffffff",
+    "light": "#FDF8F2ff",
+    "any": "#FDF8F2ff"
+  },
+  "profileSeperator": {
+    "dark": "#ffffffff",
+    "light": "#F3ECE1ff",
+    "any": "#F3ECE1ff"
+  },
+  "cellAccessoryTint": {
+    "dark": "#ffffffff",
+    "light": "#C2C2C2ff",
+    "any": "#C2C2C2ff"
+  },
+  "primaryBlue": {
+    "dark": "#ffffffff",
+    "light": "#0098FFff",
+    "any": "#0098FFff"
+  },
+  "secondaryTealTextSmall": {
+    "dark": "#ffffffff",
+    "light": "#21827Aff",
+    "any": "#21827Aff"
+  },
+  "secondaryGreenTextLarge": {
+    "dark": "#ffffffff",
+    "light": "#28A951ff",
+    "any": "#28A951ff"
+  },
+  "requestLocationButtonBorder": {
+    "dark": "#ffffffff",
+    "light": "#CAC4BEff",
+    "any": "#CAC4BEff"
+  },
+  "linkCardButton": {
+    "dark": "#ffffffff",
+    "light": "#21827Aff",
+    "any": "#21827Aff"
+  },
+  "touchBackground": {
+    "dark": "#ffffffff",
+    "light": "#d1d1d6ff",
+    "any": "#d1d1d6ff"
+  },
+  "additionsErrorRed": {
+    "dark": "#ffffffff",
+    "light": "#DB0000ff",
+    "any": "#DB0000ff"
+  },
+  "overlayBackground": {
+    "dark": "#ffffffff",
+    "light": "#040415ff",
+    "any": "#040415ff"
+  },
+  "welcomeScreenDetails": {
+    "dark": "#ffffffff",
+    "light": "#464646ff",
+    "any": "#464646ff"
+  },
+  "basicRetailerGridBorder": {
+    "dark": "#ffffffff",
+    "light": "#e7e7e7ff",
+    "any": "#E7E7E7ff"
+  },
+  "basicRetailerTypeIcon": {
+    "dark": "#ffffffff",
+    "light": "#828282ff",
+    "any": "#828282ff"
+  },
+  "primaryBlueTextSmall": {
+    "dark": "#ffffffff",
+    "light": "#0077C7ff",
+    "any": "#0077C7ff"
+  },
+  "seperator": {
+    "dark": "#ffffffff",
+    "light": "#F3ECE1ff",
+    "any": "#F3ECE1ff"
+  },
+  "secondaryGrayTint20": {
+    "dark": "#ffffffff",
+    "light": "#E7E7E7ff",
+    "any": "#E7E7E7ff"
+  },
+  "secondaryGrayTint50": {
+    "dark": "#ffffffff",
+    "light": "#C2C2C2ff",
+    "any": "#C2C2C2ff"
+  }
+}

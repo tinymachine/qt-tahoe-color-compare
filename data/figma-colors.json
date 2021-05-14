@@ -1,0 +1,246 @@
+[
+  {
+    "name": "--primary---blue",
+    "hex": "#0098FF"
+  },
+  {
+    "name": "--primary---tangerine",
+    "hex": "#FFA000"
+  },
+  {
+    "name": "--primary---fuchsia",
+    "hex": "#F9006D"
+  },
+  {
+    "name": "--primary---white",
+    "hex": "#FFFFFF"
+  },
+  {
+    "name": "--primary---black",
+    "hex": "#000000"
+  },
+  {
+    "name": "--primary---blue-tint-10",
+    "hex": "#E5F5FF"
+  },
+  {
+    "name": "--primary---blue-text--small",
+    "hex": "#0A6DBD"
+  },
+  {
+    "name": "--primary---black-tint-70",
+    "hex": "#666666"
+  },
+  {
+    "name": "--primary---white-alpha-30",
+    "hex": "#FFFFFF"
+  },
+  {
+    "name": "--primary---tangerine-tint-20",
+    "hex": "#FFECCC"
+  },
+  {
+    "name": "--primary--- -tangerine  15 -tint",
+    "hex": "#FFF1D9"
+  },
+  {
+    "name": "--secondary---yolk--f-f-d57-d",
+    "hex": "#FFD57D"
+  },
+  {
+    "name": "--secondary---orange--f-f7-d49",
+    "hex": "#FF7D49"
+  },
+  {
+    "name": "--secondary---coral--f-f6968",
+    "hex": "#FF6968"
+  },
+  {
+    "name": "--secondary---pinot-8-c2-d6-e",
+    "hex": "#8C2D6E"
+  },
+  {
+    "name": "--secondary---concord-62368-b",
+    "hex": "#62368B"
+  },
+  {
+    "name": "--secondary---teal-4-d-b1-a8",
+    "hex": "#4DB1A8"
+  },
+  {
+    "name": "--secondary---green-56-b-d77",
+    "hex": "#56BD77"
+  },
+  {
+    "name": "--secondary---gray-858585",
+    "hex": "#858585"
+  },
+  {
+    "name": "--secondary---gray-tint-50",
+    "hex": "#C2C2C2"
+  },
+  {
+    "name": "--secondary--- -gray  -tint 20",
+    "hex": "#E7E7E7"
+  },
+  {
+    "name": "--secondary---gray-tint-10",
+    "hex": "#F3F3F3"
+  },
+  {
+    "name": "--secondary---teal-text--small",
+    "hex": "#21827A"
+  },
+  {
+    "name": "--secondary---teal-text--large",
+    "hex": "#29A398"
+  },
+  {
+    "name": "--secondary--- -teal  20 -tint",
+    "hex": "#DBEFEE"
+  },
+  {
+    "name": "--secondary--- -teal  15 -tint",
+    "hex": "#E4F3F2"
+  },
+  {
+    "name": "--secondary--- -teal  10 -tint",
+    "hex": "#EDF7F6"
+  },
+  {
+    "name": "--secondary---green-text--large",
+    "hex": "#28A951"
+  },
+  {
+    "name": "--secondary---green-text--small",
+    "hex": "#208841"
+  },
+  {
+    "name": "--secondary---orange-text--small",
+    "hex": "#D13C00"
+  },
+  {
+    "name": "--secondary---orange-text--large",
+    "hex": "#FF5714"
+  },
+  {
+    "name": "--secondary---coral-text--large",
+    "hex": "#FF4E4C"
+  },
+  {
+    "name": "--secondary--- -neutral -text -light  5 -alpha",
+    "hex": "#787573"
+  },
+  {
+    "name": "--neutral---antique--f9-e8-d4",
+    "hex": "#F9E8D4"
+  },
+  {
+    "name": "--neutral---marcona--f7-e6-c6",
+    "hex": "#F7E6C6"
+  },
+  {
+    "name": "--neutral---peach--f8-d3-b4",
+    "hex": "#F8D3B4"
+  },
+  {
+    "name": "--neutral---apricot--f3-b-f85",
+    "hex": "#F3BF85"
+  },
+  {
+    "name": "--neutral---pale--cyan -c-d-e1-e2",
+    "hex": "#CDE1E2"
+  },
+  {
+    "name": "--neutral---antique-tint-40",
+    "hex": "#FDF6EE"
+  },
+  {
+    "name": "--neutral---antique-tint-30",
+    "hex": "#FDF8F2"
+  },
+  {
+    "name": "--additions---neutral--text -strong",
+    "hex": "#2F2E2D"
+  },
+  {
+    "name": "--additions---neutral--text -regular",
+    "hex": "#494746"
+  },
+  {
+    "name": "--additions---neutral--text -light",
+    "hex": "#787573"
+  },
+  {
+    "name": "--additions---tangerine--text -strong",
+    "hex": "#8A5C0F"
+  },
+  {
+    "name": "--additions---tangerine--text -regular",
+    "hex": "#9C660D"
+  },
+  {
+    "name": "--additions---fuchsia--text -strong",
+    "hex": "#BD0023"
+  },
+  {
+    "name": "--additions---fuchsia--text -regular",
+    "hex": "#E00062"
+  },
+  {
+    "name": "--additions---error--red",
+    "hex": "#DB0000"
+  },
+  {
+    "name": "--additions--- -neutral -text -light  -tint 80",
+    "hex": "#93918F"
+  },
+  {
+    "name": "--additions---neutral--text-tint 50",
+    "hex": "#BDB6AD"
+  },
+  {
+    "name": "--additions---neutral--text-tint 40",
+    "hex": "#CAC4BE"
+  },
+  {
+    "name": "--additions---neutral--text-tint 80",
+    "hex": "#958A7C"
+  },
+  {
+    "name": "--additions--- -error -red  -tint 40",
+    "hex": "#FF8B8B"
+  },
+  {
+    "name": "--additions---neutral--text -regular25 -alpha",
+    "hex": "#494746"
+  },
+  {
+    "name": "--third--party---facebook",
+    "hex": "#4A68AD"
+  },
+  {
+    "name": "--bugfix---n-o--f-i-l-l",
+    "hex": "#FFFFFF"
+  },
+  {
+    "name": "--semantic---account--background",
+    "hex": "#FDF8F2"
+  },
+  {
+    "name": "--semantic--- -table -dividers amp -u-i -off -states",
+    "hex": "#F3ECE1"
+  },
+  {
+    "name": "--semantic---table--group-background",
+    "hex": "#FFFFFF"
+  },
+  {
+    "name": "--meta---tap--target",
+    "hex": "#FF0000"
+  },
+  {
+    "name": "--meta--- -annotation -color",
+    "hex": "#8219B3"
+  }
+]
