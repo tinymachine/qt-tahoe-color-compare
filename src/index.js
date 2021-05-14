@@ -64,7 +64,7 @@ const styleHash = (hex) => `
 const getHexMarkup = (hex) => `
   <span class="hex-with-dot">
     ${getColorDot(hex)}
-    <span>${styleHash(hex)}</span>
+    <span class="pad-bottom">${styleHash(hex)}</span>
   </span>
 `
 
@@ -107,7 +107,7 @@ const getAndInsertMarkup = (hexSet) => {
   const markup = hexSet.map(
     (hex) => `
       <tr>
-        <td class="mono">${getHexMarkup(hex)}</td>
+        <td class="mono color">${getHexMarkup(hex)}</td>
         <td class="mono small">${getMatchingColorNames({
           colorSet: iosColors,
           hex,
