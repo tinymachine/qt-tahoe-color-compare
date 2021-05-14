@@ -5,14 +5,14 @@ import iosColorsRaw from '../data/ios-colors'
 const figmaColors = figmaColorsRaw.map(({ name, hex }) => {
   return {
     name: name.replace(/ /g, ''),
-    hex,
+    hex: hex.toLowerCase(),
   }
 })
 
 const iosColors = Object.keys(iosColorsRaw).map((name) => {
   return {
     name,
-    hex: iosColorsRaw[name].any.slice(0, -2), // strip alpha from end
+    hex: iosColorsRaw[name].any.slice(0, -2).toLowerCase(), // strip alpha from end
   }
 })
 
@@ -28,22 +28,12 @@ const allHexColors = {
 }
 
 const uniqueHexColorsSortedBy = {
-  ios: [
-    ...new Set(
-      allHexColors.iosFirst.map((hex) => hex.toLowerCase())
-    ),
-  ],
+  ios: [...new Set(allHexColors.iosFirst.map((hex) => hex))],
   figma: [
-    ...new Set(
-      allHexColors.figmaFirst.map((hex) => hex.toLowerCase())
-    ),
+    ...new Set(allHexColors.figmaFirst.map((hex) => hex)),
   ],
   color: [
-    ...new Set(
-      allHexColors.iosFirst
-        .map((hex) => hex.toLowerCase())
-        .sort()
-    ),
+    ...new Set(allHexColors.iosFirst.map((hex) => hex).sort()),
   ],
 }
 
@@ -68,7 +58,7 @@ const getHexMarkup = (hex) => `
 
 const getMatchingColorNames = ({ colorSet, hex }) => {
   const matches = colorSet
-    .filter((color) => color.hex.toLowerCase() === hex)
+    .filter((color) => color.hex === hex)
     .map(({ name }) => name)
 
   return matches.length > 0
