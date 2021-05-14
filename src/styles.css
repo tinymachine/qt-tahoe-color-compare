@@ -1,8 +1,7 @@
 :root {
-  --font-family-monospace: ui-monospace, Menlo, Monaco,
-    'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
-    'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
-    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+  --font-family-monospace: ui-monospace, Menlo, Monaco, "Cascadia Mono",
+    "Segoe UI Mono", "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace",
+    "Source Code Pro", "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
 }
 
 body {
@@ -43,6 +42,7 @@ th {
   z-index: 1;
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
   padding: 1rem;
   cursor: pointer;
   color: rgba(0, 0, 0, 0.4);
@@ -57,7 +57,7 @@ th.active {
 th.active::after {
   position: absolute;
   margin-left: 0.25rem;
-  content: '↓';
+  content: "↓";
   font-family: var(--font-family-monospace);
 }
 
