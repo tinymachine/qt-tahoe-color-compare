@@ -51,8 +51,8 @@ const getMatchingColorNames = ({ colorSet, hex }) => {
     .map(({ name }) => name)
 
   return matches.length > 0
-    ? matches
-    : [`<span class="error">no match</span>`]
+    ? matches.join(`<br>`)
+    : `<span class="error">no match</span>`
 }
 
 // set up toggles
@@ -69,11 +69,11 @@ const getAndInsertMarkup = (hexSet) => {
         <td class="mono small">${getMatchingColorNames({
           colorSet: iosColors,
           hex,
-        }).join('<br>')}</td>
+        })}</td>
         <td class="mono small">${getMatchingColorNames({
           colorSet: figmaColors,
           hex,
-        }).join('<br>')}</td>
+        })}</td>
       </tr>
     `
   )
