@@ -5,7 +5,7 @@
 --primary---white: #FFFFFF;
 --primary---black: #000000;
 --primary---blue-tint-10: #E5F5FF;
---primary---blue-text--small: #0A6DBD;
+--primary---blue-text--small: #0077C7;
 --primary---black-tint-70: #666666;
 --primary---white-alpha-30: #FFFFFF;
 --primary---tangerine-tint-20: #FFECCC;
