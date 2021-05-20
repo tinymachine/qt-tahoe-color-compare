@@ -24,6 +24,12 @@ header {
   justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.meta,
+.meta a {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 h1 {

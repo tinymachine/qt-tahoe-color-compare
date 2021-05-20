@@ -11,7 +11,10 @@ document.getElementById('app').innerHTML = `
 <main>
   <header>
     <h1>Tahoe Colors Compared</h1>
-    <p class="update-date small">Updated May 20, 2021</p>
+    <p class="meta small">
+      Updated May 20, 2021 · 
+      <a href="https://codesandbox.io/s/wonderful-butterfly-q8ze3">View Source</a>
+    </p>
   </header>
   <table>
     <thead>
