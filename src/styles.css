@@ -18,10 +18,20 @@ main {
   text-align: left;
 }
 
-h1 {
-  display: inline-block;
+header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
   padding: 1rem;
+  gap: 1rem;
+}
+
+h1 {
   margin-bottom: 0;
+}
+
+.update-date {
+  color: rgba(0, 0, 0, 0.5);
 }
 
 table {
