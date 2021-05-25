@@ -1,4 +1,4 @@
-import figmaColorsRawTxt from '../data/figma-colors.txt'
+import figmaColorStylesRawTxt from '../data/figma-color-styles.txt'
 import iosColorsRaw from '../data/ios-colors'
 
 /**
@@ -6,7 +6,7 @@ import iosColorsRaw from '../data/ios-colors'
  * 'Export styles to CSS variables' Figma plugin
  * to JSON
  */
-const figmaColorsRaw = figmaColorsRawTxt
+const figmaColorStylesRaw = figmaColorStylesRawTxt
   .split('\n')
   .filter((line) => line && line.substring(0, 2) !== '/*')
   .map((line) => {
@@ -16,7 +16,7 @@ const figmaColorsRaw = figmaColorsRawTxt
     }
   })
 
-export const figmaColors = figmaColorsRaw.map(
+export const figmaColorStyles = figmaColorStylesRaw.map(
   ({ name, hex }) => {
     return {
       name: name
@@ -45,10 +45,10 @@ export const iosColors = Object.keys(iosColorsRaw).map(
 const allHexColors = {
   iosFirst: [
     ...iosColors.map(({ hex }) => hex),
-    ...figmaColors.map(({ hex }) => hex),
+    ...figmaColorStyles.map(({ hex }) => hex),
   ],
   figmaFirst: [
-    ...figmaColors.map(({ hex }) => hex),
+    ...figmaColorStyles.map(({ hex }) => hex),
     ...iosColors.map(({ hex }) => hex),
   ],
 }

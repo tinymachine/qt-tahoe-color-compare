@@ -1,6 +1,6 @@
 import './styles.css'
 import {
-  figmaColors,
+  figmaColorStyles,
   iosColors,
   uniqueHexColorSets,
 } from './colorData'
@@ -77,7 +77,7 @@ const getAndInsertMarkup = (hexSet) => {
           hex,
         })}</td>
         <td class="mono small">${getMatchingColorNames({
-          colorSet: figmaColors,
+          colorSet: figmaColorStyles,
           hex,
         })}</td>
       </tr>
