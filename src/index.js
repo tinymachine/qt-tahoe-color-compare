@@ -9,7 +9,7 @@ document.getElementById('app').innerHTML = `
   <header>
     <h1>Tahoe Colors Compared (ignoring alpha)</h1>
     <p class="meta small">
-      Updated May 20, 2021 · 
+      Updated May 28, 2021 · 
       <a href="https://codesandbox.io/s/wonderful-butterfly-q8ze3">View Source</a>
     </p>
   </header>
