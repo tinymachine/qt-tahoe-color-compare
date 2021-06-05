@@ -1,18 +1,21 @@
 import './styles.css'
 import { styleSets, uniqueHexColorSets } from './colors'
 import { figmaColorsUsed } from './data-importers/figma-colors-used'
+import { noteEl, loadNote, toggleNote } from './note'
 
 // set up document structure
 
 document.getElementById('app').innerHTML = `
 <main>
   <header>
-    <h1>Tahoe Colors Compared (ignoring alpha)</h1>
+    <h1>Tahoe App Colors Compared (ignoring alpha)</h1>
     <p class="meta small">
-      Updated May 28, 2021 · 
-      <a href="https://codesandbox.io/s/wonderful-butterfly-q8ze3">View Source</a>
+      Updated June 4, 2021 · 
+      <a href="#method" data-button="noteToggle">Methodology</a> ·
+      <a href="https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3">View Source</a>
     </p>
   </header>
+
   <table>
     <thead>
       <tr>
@@ -27,6 +30,26 @@ document.getElementById('app').innerHTML = `
   </table>
 </main>
 `
+
+// set up Methodology note
+
+loadNote()
+window.location.hash === '#method' && toggleNote() // allow linking to methodology note
+
+const toggleNoteButton = document.querySelector(
+  '[data-button="noteToggle"]'
+)
+
+toggleNoteButton.addEventListener('click', (e) => {
+  toggleNote()
+})
+
+document.addEventListener('keyup', (e) => {
+  // 'Esc' key closes modal
+  ;['Esc', 'Escape'].includes(e.key) &&
+    noteEl.classList.contains('visible') &&
+    toggleNote()
+})
 
 // generate markup
 
