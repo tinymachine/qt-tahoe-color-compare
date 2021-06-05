@@ -21,14 +21,14 @@
   --note-bg: white;
   position: fixed;
   z-index: 1;
-  padding: 3rem 4rem;
+  padding: 1.5rem 2rem;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: var(--note-bg);
   box-shadow: 0rem 2rem 8rem -1rem rgba(0, 0, 0, 0.125);
   text-align: left;
-  width: 80%;
+  width: 90%;
   max-width: 36rem;
   max-height: 75vh;
   overflow-y: scroll;
@@ -36,6 +36,12 @@
   line-height: 1.75;
   font-family: var(--font-family-monospace);
   font-size: 0.825em;
+}
+
+@media (min-width: 40em) {
+  .modal {
+    padding: 3rem 4rem;
+  }
 }
 
 .modal > * {
