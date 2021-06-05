@@ -1,27 +1,28 @@
 import './styles.css'
-import {
-  figmaColors,
-  iosColors,
-  uniqueHexColorSets,
-} from './colorData'
+import { styleSets, uniqueHexColorSets } from './colors'
+import { figmaColorsUsed } from './data-importers/figma-colors-used'
+import { noteEl, loadNote, toggleNote } from './note'
 
 // set up document structure
 
 document.getElementById('app').innerHTML = `
 <main>
   <header>
-    <h1>Tahoe Colors Compared</h1>
+    <h1>Tahoe App Colors Compared (ignoring alpha)</h1>
     <p class="meta small">
-      Updated May 20, 2021 · 
-      <a href="https://codesandbox.io/s/wonderful-butterfly-q8ze3">View Source</a>
+      Updated June 4, 2021 · 
+      <a href="#method" data-button="noteToggle">Methodology</a> ·
+      <a href="https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3">View Source</a>
     </p>
   </header>
+
   <table>
     <thead>
       <tr>
-        <th data-sort="color">Color <span class="small">(ignoring alpha)</span></th>
-        <th data-sort="ios">iOS Color Styles</th>
-        <th data-sort="figma">Figma Color Styles</th>
+        <th data-sort="color">Colors (${uniqueHexColorSets.color.length})</th>
+        <th data-sort="figma">Figma Colors (${styleSets.figma.length})</th>
+        <th data-sort="android">Android Colors (${styleSets.android.length})</th>
+        <th data-sort="ios">iOS Colors (${styleSets.ios.length})</th>
       </tr>
     </thead>
     <tbody id="markup-container">
@@ -29,6 +30,26 @@ document.getElementById('app').innerHTML = `
   </table>
 </main>
 `
+
+// set up Methodology note
+
+loadNote()
+window.location.hash === '#method' && toggleNote() // allow linking to methodology note
+
+const toggleNoteButton = document.querySelector(
+  '[data-button="noteToggle"]'
+)
+
+toggleNoteButton.addEventListener('click', (e) => {
+  toggleNote()
+})
+
+document.addEventListener('keyup', (e) => {
+  // 'Esc' key closes modal
+  ;['Esc', 'Escape'].includes(e.key) &&
+    noteEl.classList.contains('visible') &&
+    toggleNote()
+})
 
 // generate markup
 
@@ -52,12 +73,19 @@ const getHexMarkup = (hex) => `
 `
 
 const getMatchingColorNames = ({ colorSet, hex }) => {
-  const matches = colorSet
-    .filter((color) => color.hex === hex)
+  const matches = styleSets[colorSet]
+    .filter(
+      (color) => color.hex.toLowerCase() === hex.toLowerCase()
+    )
     .map(({ name }) => name)
 
+  const figmaColorUsedPrefix =
+    colorSet === 'figma' && !figmaColorsUsed.includes(hex)
+      ? '[not used in UI file]<br>'
+      : ''
+
   return matches.length > 0
-    ? matches.join(`<br>`)
+    ? figmaColorUsedPrefix + matches.join(`<br>`)
     : `<span class="error">no match</span>`
 }
 
@@ -73,11 +101,15 @@ const getAndInsertMarkup = (hexSet) => {
       <tr>
         <td class="mono color">${getHexMarkup(hex)}</td>
         <td class="mono small">${getMatchingColorNames({
-          colorSet: iosColors,
+          colorSet: 'figma',
           hex,
         })}</td>
         <td class="mono small">${getMatchingColorNames({
-          colorSet: figmaColors,
+          colorSet: 'android',
+          hex,
+        })}</td>
+        <td class="mono small">${getMatchingColorNames({
+          colorSet: 'ios',
           hex,
         })}</td>
       </tr>
@@ -105,4 +137,4 @@ toggles.forEach((toggle) => {
   )
 })
 
-sortColorsBy('ios') // set default sort
+sortColorsBy('figma') // set default sort

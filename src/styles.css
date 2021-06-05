@@ -5,12 +5,22 @@
     'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 }
 
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 body {
   font-family: sans-serif;
   text-align: center;
   width: 100%;
   margin: 0;
-  padding: 0;
+  padding: 0 0 8rem;
 }
 
 main {
@@ -20,16 +30,20 @@ main {
 
 header {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
   justify-content: space-between;
   padding: 1rem;
   gap: 1rem;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
 }
 
 .meta,
 .meta a {
   color: rgba(0, 0, 0, 0.5);
+}
+
+header p {
+  margin: 0;
 }
 
 h1 {
@@ -59,8 +73,8 @@ th {
   backdrop-filter: blur(2px);
   padding: 1rem;
   cursor: pointer;
-  color: rgba(0, 0, 0, 0.4);
-  transition: color 0.2s;
+  color: #666;
+  transition: all 0.2s;
 }
 
 th:hover,
@@ -97,14 +111,12 @@ td.color {
 }
 
 .color-swatch {
-  --radius: 2rem;
+  --size: 1rem;
   display: block;
-  position: relative;
-  top: -0.5rem;
-  width: var(--radius);
-  height: var(--radius);
-  border-radius: 8px;
-  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: var(--size);
+  height: var(--size);
+  border-radius: 2px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
   /* box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); */
 }
 
@@ -130,4 +142,8 @@ td.color {
 
 .padded {
   padding: 0 0.125rem;
+}
+
+.unnamed {
+  color: #666;
 }

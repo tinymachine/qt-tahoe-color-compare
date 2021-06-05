@@ -1,0 +1,190 @@
+{
+  "offers_accent_color": {
+    "dark": "primaryBlue",
+    "light": "primaryBlue"
+  },
+  "offers_accentHighContrast_color": {
+    "dark": "primaryBlueTextSmall",
+    "light": "primaryBlueTextSmall"
+  },
+  "offers_accentLight_color": {
+    "dark": "#ffe5f5ff",
+    "light": "#ffe5f5ff"
+  },
+  "mylist_accent_color": {
+    "dark": "primaryTangerine",
+    "light": "primaryTangerine"
+  },
+  "mylist_accentHighContrast_color": {
+    "dark": "additionsTangerineTextRegular",
+    "light": "additionsTangerineTextRegular"
+  },
+  "mylist_accentLight_color": {
+    "dark": "#ffffeccc",
+    "light": "#ffffeccc"
+  },
+  "redeem_accent_color": {
+    "dark": "primaryFuchsia",
+    "light": "primaryFuchsia"
+  },
+  "redeem_accentHighContrast_color": {
+    "dark": "additionsFuchsiaTextRegular",
+    "light": "additionsFuchsiaTextRegular"
+  },
+  "redeem_accentLight_color": {
+    "dark": "#ffffe5f0",
+    "light": "#ffffe5f0"
+  },
+  "textInputView_primary_textColor": {
+    "dark": "additionsNeutralTextRegular",
+    "light": "additionsNeutralTextRegular"
+  },
+  "textInputView_error_textColor": {
+    "dark": "#ffdb0000",
+    "light": "#ffdb0000"
+  },
+  "neutralAntiqueTint": {
+    "dark": "#fffdf6ee",
+    "light": "#fffdf6ee"
+  },
+  "textInputView_neutral_backgroundColor": {
+    "dark": "neutralAntiqueTint",
+    "light": "neutralAntiqueTint"
+  },
+  "textInputView_valid_backgroundColor": {
+    "dark": "#ffedf7f6",
+    "light": "#ffedf7f6"
+  },
+  "textInputView_error_backgroundColor": {
+    "dark": "neutralAntiqueTint",
+    "light": "neutralAntiqueTint"
+  },
+  "progressBarView_defaultProgressBackground_tintColor": {
+    "dark": "#66494746",
+    "light": "#66494746"
+  },
+  "primaryBlue": {
+    "dark": "#ff0098ff",
+    "light": "#ff0098ff"
+  },
+  "primaryTangerine": {
+    "dark": "#ffffa000",
+    "light": "#ffffa000"
+  },
+  "primaryFuchsia": {
+    "dark": "#fff9006d",
+    "light": "#fff9006d"
+  },
+  "secondaryGray": {
+    "dark": "#ff858585",
+    "light": "#ff858585"
+  },
+  "secondaryGrayTint50": {
+    "dark": "#ffc2c2c2",
+    "light": "#ffc2c2c2"
+  },
+  "color888888": {
+    "dark": "#ff888888",
+    "light": "#ff888888"
+  },
+  "primaryBlueTextSmall": {
+    "dark": "#ff0077c7",
+    "light": "#ff0077c7"
+  },
+  "additionsTangerineTextRegular": {
+    "dark": "#ff9c660d",
+    "light": "#ff9c660d"
+  },
+  "additionsFuchsiaTextRegular": {
+    "dark": "#ffe00062",
+    "light": "#ffe00062"
+  },
+  "additionsNeutralTextRegular": {
+    "dark": "#ff494746",
+    "light": "#ff494746"
+  },
+  "additionsNeutralTextRegular25Alpha": {
+    "dark": "#40494746",
+    "light": "#40494746"
+  },
+  "additionsNeutralTextStrong": {
+    "dark": "#ff2f2e2d",
+    "light": "#ff2f2e2d"
+  },
+  "additionsNeutralTextLight": {
+    "dark": "#ff787573",
+    "light": "#ff787573"
+  },
+  "additionsNeutralTextTint50": {
+    "dark": "#ffbdb6ad",
+    "light": "#ffbdb6ad"
+  },
+  "additionsNeutralTextLightTint80": {
+    "dark": "#93918F",
+    "light": "#93918F"
+  },
+  "additionsNeutralTextLightAlpha": {
+    "dark": "#0d787573",
+    "light": "#0d787573"
+  },
+  "screenBackground": {
+    "dark": "#ffffffff",
+    "light": "#ffffffff"
+  },
+  "secondaryGrayTint": {
+    "dark": "#fff3f3f3",
+    "light": "#fff3f3f3"
+  },
+  "semanticAccountBackground": {
+    "dark": "#fffdf8f2",
+    "light": "#fffdf8f2"
+  },
+  "additionsNeutralTextTint": {
+    "dark": "#ffcac4be",
+    "light": "#ffcac4be"
+  },
+  "secondaryTeal": {
+    "dark": "#ff4db1a8",
+    "light": "#ff4db1a8"
+  },
+  "secondaryTealTextSmall": {
+    "dark": "#ff21827a",
+    "light": "#ff21827a"
+  },
+  "secondaryTealTextLarge": {
+    "dark": "#ff29A398",
+    "light": "#ff29A398"
+  },
+  "secondaryGreenTextLarge": {
+    "dark": "#ff28a951",
+    "light": "#ff28a951"
+  },
+  "colorEF0000": {
+    "dark": "#ffdf0000",
+    "light": "#ffdf0000"
+  },
+  "seperator": {
+    "dark": "#fff3ece1",
+    "light": "#fff3ece1"
+  },
+  "additionsErrorRed": {
+    "dark": "#ffdb0000",
+    "light": "#ffdb0000"
+  },
+  "facebook_brand_color": {
+    "dark": "#ff4a68ad",
+    "light": "#ff4a68ad"
+  },
+  "bottomSheetOverlayBackground": {
+    "dark": "#6604040F",
+    "light": "#6604040F"
+  },
+  "neutralAntique": {
+    "dark": "#fff9e8d4",
+    "light": "#fff9e8d4"
+  },
+  "colorEEEEEE": {
+    "dark": "#eeeeee",
+    "light": "#eeeeee"
+  }
+}

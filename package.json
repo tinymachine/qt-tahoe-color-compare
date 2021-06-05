@@ -8,6 +8,7 @@
     "build": "parcel build index.html"
   },
   "dependencies": {
+    "marked": "2.0.6",
     "parcel-bundler": "1.12.5",
     "parcel-plugin-text": "0.9.7"
   },
