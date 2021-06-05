@@ -7,8 +7,8 @@
 1. Discard any meta color styles not used in the UI (styles that include the prefix "meta"), and any styles not detected by Style Lens (i.e. unused colors).
 1. Combine remaining styles with used colors.
 
-[f-styles]: https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3?file=/data/figma-color-styles.txt
-[f-used]: https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3?file=/data/figma-colors-used.txt
+[f-styles]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-color-styles.txt
+[f-used]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-colors-used.txt
 [fp-cssvars]: https://www.figma.com/community/plugin/816737626312049592/Export-styles-to-CSS-variables
 [fp-sl]: https://www.figma.com/community/plugin/856227067026087708/Style-Lens
 
@@ -18,7 +18,7 @@
 1. Extract only the `light` theme hex values.
 1. Remove alpha values (initial two digits) from 8-digit hex values.
 
-[android-json]: https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3?file=/data/android-colors.json
+[android-json]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/android-colors.json
 
 ### iOS
 
@@ -26,6 +26,6 @@
 2. Extract only the `any` theme hex values.
 3. Remove alpha values (final two digits) from 8-digit hex values.
 
-[ios-json]: https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3?file=/data/ios-colors.json
+[ios-json]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/ios-colors.json
 
-—Mihira Jayasekera
+— Mihira Jayasekera

@@ -15,7 +15,10 @@ const loadNote = () => {
   `
 
   const scrimEl = document.querySelector('.scrim')
+  const modalEl = document.querySelector('.modal')
+
   scrimEl.addEventListener('click', () => toggleNote())
+  modalEl.addEventListener('click', (e) => e.stopPropagation())
 }
 
 const toggleNote = () => {

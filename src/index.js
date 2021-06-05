@@ -12,7 +12,7 @@ document.getElementById('app').innerHTML = `
     <p class="meta small">
       Updated June 4, 2021 · 
       <a href="#method" data-button="noteToggle">Methodology</a> ·
-      <a href="https://codesandbox.io/s/qt-tahoe-color-compare-q8ze3">View Source</a>
+      <a href="https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main">View Source</a>
     </p>
   </header>
 
