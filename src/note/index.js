@@ -17,7 +17,10 @@ const loadNote = () => {
   const scrimEl = document.querySelector('.scrim')
   const modalEl = document.querySelector('.modal')
 
+  // close modal when clicking scrim
   scrimEl.addEventListener('click', () => toggleNote())
+
+  // don't close modal when clicking inside modal
   modalEl.addEventListener('click', (e) => e.stopPropagation())
 }
 
