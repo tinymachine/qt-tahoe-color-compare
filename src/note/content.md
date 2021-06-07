@@ -7,7 +7,7 @@
 1. Discard any meta color styles not used in the UI (styles that include the prefix "meta"), and any styles not detected by Style Lens (i.e. unused colors), except for styles used in Android or iOS for any reason.
 1. Combine remaining styles with used colors.
 
-_Note: in Figma, we're considering the use of unnamed colors an anti-pattern, so unnamed colors are labeled '[unnamed color — needs fix]'._
+_Note: in Figma, we're considering the use of unnamed colors an anti-pattern, so unnamed colors are labeled '⚠️ unnamed color — needs fix'._
 
 [f-styles]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-color-styles.txt
 [f-used]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-colors-used.txt

@@ -14,7 +14,7 @@ const hexColors = {
 
 const knownUnnamedColors = ['#ffffff', '#000000']
 const unnamedColorName =
-  '<span class="unnamed">[unnamed color]</span>'
+  '<span class="unnamed">unnamed color</span>'
 
 knownUnnamedColors.forEach((hex) => {
   !hexColors.ios.includes(hex) &&

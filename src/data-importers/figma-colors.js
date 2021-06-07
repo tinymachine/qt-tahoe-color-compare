@@ -61,7 +61,7 @@ figmaColorStylesUsed.push(
   ...figmaUnnamedColors.map((hex) => {
     return {
       name:
-        '<span class="unnamed">[unnamed color — needs fix]</span>',
+        '<span class="unnamed warning-icon">unnamed color — needs fix</span>',
       hex,
     }
   })

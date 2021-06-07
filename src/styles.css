@@ -148,3 +148,8 @@ td.color {
 .unnamed {
   color: #666;
 }
+
+.warning-icon::before {
+  font-family: sans-serif;
+  content: '⚠️ ';
+}
