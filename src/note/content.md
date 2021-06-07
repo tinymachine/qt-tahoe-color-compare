@@ -4,7 +4,7 @@
 
 1. Import all defined [color styles][f-styles] exported from Figma using the [Export Styles to CSS Variables][fp-cssvars] plugin.
 1. Import all fill and stroke colors detected by the [Style Lens][fp-sl] plugin. (Style Lens doesn't include an export function, so I just selected all text within the plugin panel window and pasted into a (pardon the term) [dump file][f-used], and then extracted all hex values from that dump. Messy, but workable.)
-1. Discard any meta color styles not used in the UI (styles that include the prefix "meta"), and any styles not detected by Style Lens (i.e. unused colors).
+1. Discard any meta color styles not used in the UI (styles that include the prefix "meta"), and any styles not detected by Style Lens (i.e. unused colors), except for styles used in Android or iOS for any reason.
 1. Combine remaining styles with used colors.
 
 _Note: in Figma, we're considering the use of unnamed colors an anti-pattern, so unnamed colors are labeled '[unnamed color — needs fix]'._
