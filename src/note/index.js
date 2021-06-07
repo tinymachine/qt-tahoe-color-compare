@@ -5,6 +5,8 @@ import marked from 'marked'
 const noteEl = document.getElementById('note')
 const activeClass = 'visible'
 
+marked.setOptions({ smartypants: true }) // use smart punctuation
+
 const loadNote = () => {
   noteEl.innerHTML = `
     <div class="scrim">

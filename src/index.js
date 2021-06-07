@@ -10,7 +10,7 @@ document.getElementById('app').innerHTML = `
   <header>
     <h1>Tahoe App Colors Compared (ignoring alpha)</h1>
     <p class="meta small">
-      Updated June 4, 2021 · 
+      Updated June 7, 2021 · 
       <a href="#method" data-button="noteToggle">Methodology</a> ·
       <a href="https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main">View Source</a>
     </p>

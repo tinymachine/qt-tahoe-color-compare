@@ -60,7 +60,8 @@ const figmaUnnamedColors = figmaColorsUsed.filter(
 figmaColorStylesUsed.push(
   ...figmaUnnamedColors.map((hex) => {
     return {
-      name: '<span class="unnamed">[unnamed color]</span>',
+      name:
+        '<span class="unnamed">[unnamed color — needs fix]</span>',
       hex,
     }
   })

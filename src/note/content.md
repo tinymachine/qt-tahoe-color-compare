@@ -7,6 +7,8 @@
 1. Discard any meta color styles not used in the UI (styles that include the prefix "meta"), and any styles not detected by Style Lens (i.e. unused colors).
 1. Combine remaining styles with used colors.
 
+_Note: in Figma, we're considering the use of unnamed colors an anti-pattern, so unnamed colors are labeled '[unnamed color — needs fix]'._
+
 [f-styles]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-color-styles.txt
 [f-used]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/figma-colors-used.txt
 [fp-cssvars]: https://www.figma.com/community/plugin/816737626312049592/Export-styles-to-CSS-variables
@@ -16,7 +18,8 @@
 
 1. Import [JSON file of Android color styles][android-json] (most recently supplied by David Willoughby on May 24).
 1. Extract only the `light` theme hex values.
-1. Remove alpha values (initial two digits) from 8-digit hex values.
+1. Remove alpha values (first two digits) from 8-digit hex values.
+1. Remove colors used for debugging (e.g. `colorEF0000`).
 
 [android-json]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/android-colors.json
 
@@ -24,8 +27,8 @@
 
 1. Import [JSON file of iOS color styles][ios-json] (most recently supplied by David Willoughby on May 20).
 2. Extract only the `any` theme hex values.
-3. Remove alpha values (final two digits) from 8-digit hex values.
+3. Remove alpha values (last two digits) from 8-digit hex values.
 
 [ios-json]: https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main?file=/data/ios-colors.json
 
-— Mihira Jayasekera
+—Mihira Jayasekera

@@ -1,15 +1,16 @@
 import androidColorsRaw from '../../data/android-colors'
 
 const themeToImport = 'light'
+const colorsToRemove = ['colorEF0000']
 
-const androidColors = Object.keys(androidColorsRaw).map(
-  (name) => {
+const androidColors = Object.keys(androidColorsRaw)
+  .map((name) => {
     return {
       name,
       hex: getHex(androidColorsRaw[name][themeToImport]),
     }
-  }
-)
+  })
+  .filter((name) => !colorsToRemove.includes(name))
 
 function getHex(string) {
   const hexWithOrWithoutAlpha =
