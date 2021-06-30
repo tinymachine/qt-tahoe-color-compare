@@ -66,7 +66,7 @@ const styleHash = (hex) => `
 `
 
 const getHexMarkup = (hex) => `
-  <span class="hex-with-dot">
+  <span class="hex-with-swatch">
     ${getColorSwatch(hex)}
     <span class="pad-bottom">${styleHash(hex)}</span>
   </span>

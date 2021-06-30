@@ -58,6 +58,10 @@ h1 {
 .table {
   display: table;
   text-align: left;
+  --thead-v-padding: 1rem;
+  --thead-padding-top: var(--thead-v-padding);
+  --thead-padding-bottom: var(--thead-v-padding);
+  --thead-font-size: 1em;
 }
 
 .thead {
@@ -79,7 +83,10 @@ h1 {
 
 .anchor {
   position: relative;
-  top: -3rem;
+  top: calc(
+    -1 * (var(--thead-padding-top) + var(--thead-padding-bottom) +
+          var(--thead-font-size))
+  );
   visibility: hidden;
   display: block;
 }
@@ -106,8 +113,10 @@ h1 {
   background-color: rgba(255, 255, 255, 0.9);
   -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
-  padding: 1rem;
+  padding: var(--thead-padding-top) 1rem
+    var(--thead-padding-bottom);
   cursor: pointer;
+  font-size: var(--thead-font-size);
   color: #666;
   transition: all 0.2s;
 }
@@ -130,6 +139,7 @@ h1 {
 }
 
 .td.color {
+  padding-top: 1.25rem;
   padding-bottom: 0;
 }
 
@@ -137,7 +147,7 @@ h1 {
   padding-bottom: 1rem;
 }
 
-.hex-with-dot {
+.hex-with-swatch {
   display: inline-flex;
   flex-wrap: wrap;
   align-items: top;
