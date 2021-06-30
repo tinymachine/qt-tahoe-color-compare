@@ -35,7 +35,6 @@ document.getElementById('app').innerHTML = `
 // set up Methodology note
 
 loadNote()
-window.location.hash === '#method' && toggleNote() // allow linking to methodology note
 
 const toggleNoteButton = document.querySelector(
   '[data-button="noteToggle"]'
@@ -148,3 +147,17 @@ toggles.forEach((toggle) => {
 })
 
 sortColorsBy('figma') // set default sort
+
+/**
+ * handle URL hashes (since DOM is built dynamically,
+ * anchor links don't work by default)
+ */
+
+const hash = window.location.hash
+
+if (hash === '#method') {
+  toggleNote() // allow linking to methodology note
+} else if (hash) {
+  const href = window.location.href
+  window.location.href = href
+}
