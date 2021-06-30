@@ -55,17 +55,50 @@ h1 {
   color: rgba(0, 0, 0, 0.5);
 }
 
-table {
+.table {
+  display: table;
   text-align: left;
 }
 
-th,
-td {
-  vertical-align: top;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.075);
+.thead {
+  display: table-header-group;
 }
 
-th {
+.tbody {
+  display: table-row-group;
+}
+
+.tr {
+  display: table-row;
+}
+
+.tbody :is(a:link, a:visited) {
+  text-decoration: none;
+  color: inherit;
+}
+
+.anchor {
+  position: relative;
+  top: -3rem;
+  visibility: hidden;
+}
+
+.anchor:target + a.tr {
+  background-color: hsl(50, 90%, 95%);
+}
+
+.tbody .tr:hover {
+  background-color: hsl(0, 0%, 98%);
+}
+
+.th,
+.td {
+  display: table-cell;
+  vertical-align: top;
+  border-bottom: 1px solid hsl(0, 0%, 95%);
+}
+
+.th {
   position: sticky;
   top: 0;
   z-index: 1;
@@ -78,24 +111,24 @@ th {
   transition: all 0.2s;
 }
 
-th:hover,
-th.active {
+.th:hover,
+.th.active {
   color: black;
 }
 
-th.active::after {
+.th.active::after {
   position: absolute;
   margin-left: 0.25rem;
   content: '↓';
   font-family: var(--font-family-monospace);
 }
 
-td {
+.td {
   padding: 1.5rem 1rem;
   line-height: 2;
 }
 
-td.color {
+.td.color {
   padding-bottom: 0;
 }
 

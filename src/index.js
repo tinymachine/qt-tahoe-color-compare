@@ -10,24 +10,25 @@ document.getElementById('app').innerHTML = `
   <header>
     <h1>Tahoe App Colors Compared (ignoring alpha)</h1>
     <p class="meta small">
-      Updated June 7, 2021 · 
+      Updated <a href="https://github.com/tinymachine/qt-tahoe-color-compare/commits/main">June 29, 2021</a> · 
       <a href="#method" data-button="noteToggle">Methodology</a> ·
       <a href="https://codesandbox.io/s/github/tinymachine/qt-tahoe-color-compare/tree/main">View Source</a>
     </p>
   </header>
 
-  <table>
-    <thead>
-      <tr>
-        <th data-sort="color">Colors (${uniqueHexColorSets.color.length})</th>
-        <th data-sort="figma">Figma Colors (${styleSets.figma.length})</th>
-        <th data-sort="android">Android Colors (${styleSets.android.length})</th>
-        <th data-sort="ios">iOS Colors (${styleSets.ios.length})</th>
-      </tr>
-    </thead>
-    <tbody id="markup-container">
-    </tbody>
-  </table>
+  <div role="table" class="table">
+    <div role="rowgroup" class="thead">
+      <div role="row" class="tr">
+        <div role="cell" class="th" data-sort="color">Colors (${uniqueHexColorSets.color.length})</div>
+        <div role="cell" class="th" data-sort="figma">Figma Colors (${styleSets.figma.length})</div>
+        <div role="cell" class="th" data-sort="android">Android Colors (${styleSets.android.length})</div>
+        <div role="cell" class="th" data-sort="ios">iOS Colors (${styleSets.ios.length})</div>
+      </div>
+    </div>
+
+    <div role="rowgroup" id="markup-container" class="tbody">
+    </div>
+  </div>
 </main>
 `
 
@@ -98,21 +99,30 @@ const markupContainer = document.querySelector(
 const getAndInsertMarkup = (hexSet) => {
   const markup = hexSet.map(
     (hex) => `
-      <tr>
-        <td class="mono color">${getHexMarkup(hex)}</td>
-        <td class="mono small">${getMatchingColorNames({
-          colorSet: 'figma',
-          hex,
-        })}</td>
-        <td class="mono small">${getMatchingColorNames({
-          colorSet: 'android',
-          hex,
-        })}</td>
-        <td class="mono small">${getMatchingColorNames({
-          colorSet: 'ios',
-          hex,
-        })}</td>
-      </tr>
+      <a id="${hex.substring(1)}" class="anchor"></a>
+      <a href="${hex}" role="row" class="tr">
+        <div role="cell" class="td mono color">${getHexMarkup(
+          hex
+        )}</div>
+        <div role="cell" class="td mono small">${getMatchingColorNames(
+          {
+            colorSet: 'figma',
+            hex,
+          }
+        )}</div>
+        <div role="cell" class="td mono small">${getMatchingColorNames(
+          {
+            colorSet: 'android',
+            hex,
+          }
+        )}</div>
+        <div role="cell" class="td mono small">${getMatchingColorNames(
+          {
+            colorSet: 'ios',
+            hex,
+          }
+        )}</div>
+      </a>
     `
   )
 
