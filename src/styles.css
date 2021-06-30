@@ -81,6 +81,7 @@ h1 {
   position: relative;
   top: -3rem;
   visibility: hidden;
+  display: block;
 }
 
 .anchor:target + a.tr {
